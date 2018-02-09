@@ -19,7 +19,16 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('./../fonts/Raleway-regular/raleway-regular-webfont.woff2') format('woff2'),
+    url('./../fonts/Raleway-regular/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*, *:after, *:before{
 
+}
 html {
     width: 100%;
     height: 100%;
@@ -31,6 +40,7 @@ html {
 }
 body {
     width: 1200px;
+    height: 2664px;
     margin: 0 auto ;
 }
 header {
@@ -84,6 +94,9 @@ img {
     width: 100%;
     bottom: 0;
 }
+.menu:checked {
+    background-color: #e00311;
+}
 .menu label {
     cursor: pointer;
     display: inline-block;
@@ -94,7 +107,7 @@ img {
     margin: 2em .2em 1em;
 }
 .menu label:hover {
-    background: red;
+    background: #e00311;
 }
 .slide {
     width: 100%;
@@ -114,7 +127,7 @@ img {
     transition: left .65s ease-out;
 }
 .slide-1 {
-    background: #ededed;
+    background: #ededed url("./../img/headphones.png") no-repeat 718px 0px;
 }
 .text{
     width: 620px;
@@ -127,7 +140,7 @@ img {
     line-height: 150px;
     text-transform: uppercase;
     letter-spacing: 3.75px;
-    margin: 50px 0 0 0;
+    margin: 20px 0 0 0;
 }
 .description {
     font-size: 24px;
@@ -143,15 +156,151 @@ img {
     line-height: 36px;
     letter-spacing: 0.6px;
 }
-.bg-img {
-    float: left;
-    background: url("./../img/headphones.png") no-repeat left;
-    height: 491px;
-    width: 365px;
-}
 .slide-2 {
     background-color: white;
 }
 .slide-3 {
     background-color: #ededed;
+}
+.featured {
+    width: 100%;
+    height: 1200px;
+    margin-top: 72px;
+    text-align: center;
+    background: white url("./../img/underline.png") no-repeat 50% 168px;
+}
+h2 {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: ralewayblack, Arial,sans-serif;
+    color: #303030;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 150px;
+    letter-spacing: 1.2px;
+    margin: 54px 0 0 0;
+}
+.featured-description {
+    display: inline-block;
+    width: 555px;
+    margin: 0;
+    font-family: ralewayregular, Arial, sans-serif;
+    color: #303030;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.45px;
+}
+.first-photo{
+    float: left;
+    width: 692px;
+    height: 387px;
+    background: url("./../img/speaker.png") no-repeat;
+    background-size: cover;
+    margin-top: 72px;
+    margin-left: 72px;
+}
+.second-photo{
+    float: right;
+    width: 328px;
+    height: 387px;
+    background: url("./../img/reddrdre.png") no-repeat;
+    margin: 72px 72px 0px 35px;
+}
+.third-photo{
+    float: left;
+    margin: 35px 0px 72px 72px;
+    width: 328px;
+    height: 387px;
+    background: url("./../img/red.png") no-repeat;
+}
+.fourth-photo{
+    float: left;
+    margin: 35px 0px 72px 35px;
+    width: 328px;
+    height: 387px;
+    background: url("./../img/shoes.png") no-repeat;
+}
+.fifth-photo{
+    float: right;
+    margin: 35px 72px 72px 35px;
+    width: 328px;
+    height: 387px;
+    background: url("./../img/tumblr.png") no-repeat;
+}
+footer {
+    clear: both;
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+}
+h3 {
+    color: #303030;
+    font-family: ralewayblack, Arial, sans-serif;
+    font-size: 48px;
+    line-height: 150px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin: 100px auto 0;
+}
+.featured-description {
+    display: inline-block;
+    width: 555px;
+    vertical-align: middle;
+}
+form {
+    width: 702px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:  70px;
+    background-color: white;
+    padding: 0;
+    outline: none;
+}
+input[type="text"]{
+    float: left;
+    width: 430px;
+    height: 100%;
+    margin-left: 62px;
+    border: none;
+}
+input[type="button"] {
+    float: left;
+    margin: 0;
+    width: 206px;
+    height: 100%;
+    border-radius: 0px 35px 35px 0px;
+    border: none;
+    background-color: #e10011;
+    outline: none;
+}
+.contacts {
+    width: 340px;
+    height: 70px;
+    margin: 0 auto;
+}
+#fb {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: url("./../img/fb.png") no-repeat;
+}
+#tw {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: url("./../img/tw.png") no-repeat;
+}
+#yt {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: url("./../img/yt.png") no-repeat;
+}
+#me {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: url("./../img/me.png") no-repeat;
 }
