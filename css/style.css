@@ -6,6 +6,14 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'Raleway-SemiBoldItalic';
+    src:  url('../fonts/Raleway-italic/Raleway-SemiBoldItalic.woff') format('woff'),
+    url('../fonts/Raleway-italic/Raleway-SemiBoldItalic.ttf')  format('truetype'),
+    url('../fonts/Raleway-italic/Raleway-SemiBoldItalic.svg#Raleway-SemiBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'robotoregular';
     src: url('./../fonts/Roboto-regular/roboto-regular-webfont.woff2') format('woff2'),
     url('./../fonts/Roboto-regular/roboto-regular-webfont.woff') format('woff');
@@ -25,6 +33,17 @@
     url('./../fonts/Raleway-regular/raleway-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: 'Font Awesome';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Awesome/fa-regular-400.eot");
+    src: url("../fonts/Awesome/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Awesome/fa-regular-400.woff2") format("woff2"),
+    url("../fonts/Awesome/fa-regular-400.woff") format("woff"),
+    url("../fonts/Awesome/fa-regular-400.ttf") format("truetype"),
+    url("../fonts/Awesome/fa-regular-400.svg#fontawesome") format("svg");
 }
 *, *:after, *:before{
 
@@ -168,30 +187,25 @@ img {
 .featured {
     width: 100%;
     height: 1200px;
-    margin-top: 72px;
+    margin-top: 77px;
     text-align: center;
     background: white url("./../img/underline.png") no-repeat 50% 168px;
 }
 h2 {
     display: inline-block;
-    vertical-align: middle;
     font-family: ralewayblack, Arial,sans-serif;
     color: #303030;
     font-size: 48px;
-    font-weight: 400;
-    line-height: 150px;
     letter-spacing: 1.2px;
-    margin: 54px 0 0 0;
+    margin: 104px 0 0 0;
 }
 .featured-description {
     display: inline-block;
     width: 555px;
-    margin: 0;
+    margin: 40px 0 0 0;
     font-family: ralewayregular, Arial, sans-serif;
     color: #303030;
     font-size: 18px;
-    font-weight: 400;
-    line-height: 20px;
     letter-spacing: 0.45px;
 }
 .first-photo{
@@ -247,16 +261,21 @@ h3 {
     font-size: 48px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    margin: 42px auto 0px;
+    margin: 99px auto 0px;
 }
-.featured-description {
+.news-description {
     display: inline-block;
     width: 555px;
-    vertical-align: middle;
+    color: #303030;
+    font-family: ralewayregular;
+    font-size: 18px;
+    margin-top: 20px;
+    letter-spacing: 0.45px;
 }
 form {
     width: 702px;
     height: 70px;
+    margin-top: 37px;
     margin-left: auto;
     margin-right: auto;
     border-radius:  70px;
@@ -266,12 +285,20 @@ form {
 }
 input[type="text"]{
     float: left;
-    width: 430px;
-    height: 100%;
-    margin-left: 62px;
+    width: 470px;
+    height: 96%;
+    border-radius: 35px 0px 0px 35px;
+    margin-left: 24px;
     border: none;
 }
-input[type="button"] {
+input::placeholder {
+    color: #979797;
+    font-family: "Font Awesome 5 Free", Raleway-SemiBoldItalic;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.45px;
+}
+button {
     float: left;
     margin: 0;
     width: 206px;
@@ -280,12 +307,15 @@ input[type="button"] {
     border: none;
     background-color: #e10011;
     color: white;
+    font-family: robotoblack, Arial, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
     outline: none;
 }
 .contacts {
     width: 340px;
     height: 70px;
-    margin: 0 auto;
+    margin: 112px auto 0;
 }
 #fb {
     display: inline-block;
@@ -310,4 +340,19 @@ input[type="button"] {
     width: 70px;
     height: 70px;
     background: url("./../img/me.png") no-repeat;
+}
+.copyright {
+    display: inline-block;
+    margin: 60px auto 0;
+    width: 500px;
+    color: #979797;
+    font-family: ralewayregular, Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.45px;
+}
+.your-company {
+    font-family: ralewayregular, Arial, sans-serif;
+    font-size: 18px;
+    color: #303030;
+    letter-spacing: 0.45px;
 }
